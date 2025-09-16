@@ -1,0 +1,12 @@
+{
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ],
+    "Lua.workspace.library": [
+        "e:/Stormworks Lua Script/libraries/",
+        "c:/Users/Bright/.vscode/extensions/nameouschangey.lifeboatapi-0.0.33/assets/lua/Common/",
+        "c:/Users/Bright/.vscode/extensions/nameouschangey.lifeboatapi-0.0.33/assets/lua/Microcontroller/",
+        "E:/Stormworks Lua Script/libraries/",
+        "e:/Stormworks Lua Script/libraries/_build/libs/"
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "Drivetrain":
+    {
+        "Module->Interface":
+        {   
+            "bool":
+            {
+                "1": "I Am Master",
+                "2": "Master Exists",
+                "3": "I Am Inverted",
+                "4": "Emergency Status",
+                "5": "Emergency Request",
+                "6": "Remote Engine Start"
+
+            },
+
+            "number":
+            {
+                "1": "Number Of Cars",
+                "2": "Master ID",
+                "3": "My ID",
+                "4": "Throttle(m/s, 0-maxSpeed)",
+                "5": "Brakes (0-1)"
+
+            }
+        },
+
+        "Interface->Module":
+        {   
+            "bool":
+            {
+                "4": "Emergency Enabled",
+                "5": "Emergency Requested",
+                "6": "Remote Engine Activated"
+
+
+            },
+
+            "number":
+            {
+                "1": "Current Set Speed (m/s)",
+                "2": "Current Brakes (0-1)"
+
+            }
+        }
+
+
+    },
+
+    "Decouple":
+    {
+        "Module->Interface":
+        {   
+            "bool":
+            {
+                "1": "I Am Master"
+            },
+
+            "number":
+            {
+                "1": "Number Of Cars",
+                "2": "Master ID",
+                "3": "My ID",
+                "4": "Decoupled Car ID",
+                "5": "Brakes (0-1)"
+
+            }
+        },
+
+        "Interface->Module":
+        {   
+            "number":
+            {
+                "1": "Decoupled Car ID"
+            }
+        }
+    },
+
+    "ExteriorLight":
+    {
+        "Module->Interface":
+        {   
+            "bool":
+            {
+                "3": "I Am Inverted",
+                "4": "Autolight",
+                "5": "Headlight",
+                "6": "Highbeam",
+                "7": "Work Light",
+                "8": "Warning Light",
+                "9": "Decorative Light",
+                "10": "Reverser"
+
+            },
+
+            "number":
+            {
+                "1": "Number Of Cars",
+                "3": "My ID"
+            }
+        },
+
+        "Interface->Module":
+        {   
+            "bool":
+            {
+                "1": "Autolight",
+                "2": "Headlight",
+                "3": "Highbeam",
+                "4": "Work Light",
+                "5": "Warning Light",
+                "6": "Decorative Light",
+                "7": "Reverser"
+
+            }
+        }
+    },
+
+    "Passenger":
+    {
+        "Module->Interface":
+        {   
+            "bool":
+            {
+                "1": "I Am Master",
+                "2": "Master Exists",
+                "3": "I Am Inverted",
+                "4": "Unlock Left",
+                "5": "Unlock Right",
+                "6": "Master Door Openning",
+                "7": "Heater"
+
+
+
+            },
+
+            "number":
+            {
+                "1": "Number Of Cars",
+                "2": "Master ID",
+                "3": "My ID",
+                "4": "First ID",
+                "5": "Last ID",
+                "6": "Red",
+                "7": "Green",
+                "8": "Blue"
+            }
+        },
+
+        "LightningInterface->Module":
+        {   
+            "bool":
+            {
+                "1": "Heater"
+
+            },
+
+            "number":
+            {
+                "1": "Red",
+                "2": "Green",
+                "3": "Blue"
+            }
+
+        },
+
+        "DoorInterface->Module":
+        {
+            "bool":
+            {
+                "1": "Open Selected Door",
+                "2": "Unlock Left",
+                "3": "Unlock Right"
+            },
+
+            "number":
+            {
+                "1": "First Car",
+                "2": "Last Car"
+            }
+        }
+
+        
+    },
+
+    "UI return":
+    {
+        "bool":
+        {
+            "1": "Master Status",
+            "2": "Master Conflict",
+            "3": "Emergency Status",
+            "4": "Engine Activation",
+            "5": "Wheel Slip"
+        },
+
+        "number":
+        {
+            "1": "Current Speed",
+            "2": "Wheel RPS",
+            "3": "Target Speed",
+            "4": "Applied Brake",
+            "5": "Selector Indicator",
+            "6": "Applied Throttle"
+        }
+    }
+}
